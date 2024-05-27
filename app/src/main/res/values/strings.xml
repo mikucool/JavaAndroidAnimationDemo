@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AnimationPlayground</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alpha">alpha</string>
+    <string name="scale">scale</string>
+    <string name="translate">translate</string>
+    <string name="rotate">rotate</string>
+    <string name="set1">set1</string>
+    <string name="animation_set">animation set</string>
+    <string name="animation_listener">animation listener</string>
+    <string name="accelerate_interpolator">AccelerateInterpolator</string>
+    <string name="decelerate_interpolator">DecelerateInterpolator</string>
+    <string name="linear_interpolator">LinearInterpolator</string>
+    <string name="over_shoot_interpolator">OvershootInterpolator</string>
+    <string name="accelerate_decelerate_interpolator">AccelerateDecelerateInterpolator</string>
+    <string name="anticipate_interpolator">AnticipateInterpolator</string>
+    <string name="anticipate_over_shoot_interpolator">AnticipateOvershootInterpolator</string>
+    <string name="bounce_interpolator">BounceInterpolator</string>
+    <string name="cycle_interpolator">CycleInterpolator</string>
+</resources>
