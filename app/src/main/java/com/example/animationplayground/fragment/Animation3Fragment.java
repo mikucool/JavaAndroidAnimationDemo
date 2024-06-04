@@ -1,10 +1,6 @@
 package com.example.animationplayground.fragment;
 
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +9,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.TranslateAnimation;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
 import com.example.animationplayground.databinding.FragmentAnimation3Binding;
 
@@ -35,6 +34,8 @@ public class Animation3Fragment extends Fragment {
             // 第一个动画
             AlphaAnimation alphaAnimation = new AlphaAnimation(1.0f, .2f);
             alphaAnimation.setDuration(2000L);
+            alphaAnimation.setRepeatMode(Animation.REVERSE);
+            alphaAnimation.setRepeatCount(Animation.INFINITE);
             // 第二个动画，同时设置重复效果
             TranslateAnimation translateAnimation = new TranslateAnimation(0f, 100f, 0f, -100f);
             translateAnimation.setDuration(2000L);

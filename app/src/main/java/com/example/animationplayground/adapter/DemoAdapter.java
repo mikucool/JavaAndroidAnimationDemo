@@ -14,13 +14,14 @@ import com.example.animationplayground.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class DemoAdapter extends RecyclerView.Adapter<DemoAdapter.DemoViewHolder> {
 
     private static final List<String> list = new ArrayList<>();
 
     static {
-        list.addAll(FRAGMENT_MAP.keySet());
+        list.addAll(FRAGMENT_MAP.keySet().stream().sorted().collect(Collectors.toList()));
     }
 
     private final Callback callback;
