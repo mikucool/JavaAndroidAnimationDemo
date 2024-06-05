@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.animationplayground.databinding.ActivityMainBinding;
-import com.example.animationplayground.fragment.DemosFragment;
+import com.example.animationplayground.fragment.ViewsAnimationFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = ActivityMainBinding.inflate(this.getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportFragmentManager().beginTransaction().add(R.id.main_layout, new DemosFragment()).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.main_layout, new ViewsAnimationFragment()).commit();
     }
 }
