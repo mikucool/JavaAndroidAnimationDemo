@@ -1,5 +1,7 @@
 package com.example.animationplayground.views_animation;
 
+import static com.example.animationplayground.Const.MAP_LIST;
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,22 +14,28 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.animationplayground.R;
 import com.example.animationplayground.adapter.DemoAdapter;
-import com.example.animationplayground.databinding.FragmentDemosBinding;
+import com.example.animationplayground.databinding.FragmentViewsAnimationBinding;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class ViewsAnimationFragment extends Fragment {
-    private FragmentDemosBinding binding;
+    private FragmentViewsAnimationBinding binding;
+
     public ViewsAnimationFragment() {
         // Required empty public constructor
     }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        binding = FragmentDemosBinding.inflate(inflater, container, false);
+        binding = FragmentViewsAnimationBinding.inflate(inflater, container, false);
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
         binding.recyclerView.setAdapter(new DemoAdapter(fragmentName -> {
             try {
@@ -41,7 +49,7 @@ public class ViewsAnimationFragment extends Fragment {
             } catch (Exception e) {
                 Toast.makeText(requireContext(), "Fragment Is Not Found", Toast.LENGTH_SHORT).show();
             }
-        }));
+        }, MAP_LIST.get(0)));
         return binding.getRoot();
     }
 }

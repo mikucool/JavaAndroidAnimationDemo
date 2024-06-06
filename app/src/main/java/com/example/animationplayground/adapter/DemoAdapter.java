@@ -1,7 +1,5 @@
 package com.example.animationplayground.adapter;
 
-import static com.example.animationplayground.Const.FRAGMENT_MAP;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,22 +10,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.animationplayground.R;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class DemoAdapter extends RecyclerView.Adapter<DemoAdapter.DemoViewHolder> {
 
-    private static final List<String> list = new ArrayList<>();
-
-    static {
-        list.addAll(FRAGMENT_MAP.keySet().stream().sorted().collect(Collectors.toList()));
-    }
-
+    private Map<String, String> titleMap;
     private final Callback callback;
+    private final List<String> titleList;
 
-    public DemoAdapter(Callback callback) {
+    public DemoAdapter(Callback callback,Map<String, String> titleMap) {
         this.callback = callback;
+        this.titleMap = titleMap;
+        this.titleList = titleMap.keySet().stream().sorted().collect(Collectors.toList());
     }
 
     @NonNull
@@ -41,14 +37,14 @@ public class DemoAdapter extends RecyclerView.Adapter<DemoAdapter.DemoViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull DemoAdapter.DemoViewHolder holder, int position) {
-        String demoName = list.get(position);
+        String demoName = titleList.get(position);
         holder.button.setText(demoName);
-        holder.button.setOnClickListener(v -> callback.onClickedButton(FRAGMENT_MAP.get(demoName)));
+        holder.button.setOnClickListener(v -> callback.onClickedButton(titleMap.get(demoName)));
     }
 
     @Override
     public int getItemCount() {
-        return list.size();
+        return titleList.size();
     }
 
     static class DemoViewHolder extends RecyclerView.ViewHolder {
