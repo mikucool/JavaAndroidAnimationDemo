@@ -1,4 +1,4 @@
-package com.example.animationplayground.fragment;
+package com.example.animationplayground.views_animation.fragment;
 
 import android.os.Bundle;
 

@@ -1,4 +1,4 @@
-package com.example.animationplayground.fragment;
+package com.example.animationplayground.views_animation.fragment;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;

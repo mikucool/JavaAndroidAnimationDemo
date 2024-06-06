@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.Animation5Fragment">
+    tools:context=".views_animation.fragment.Animation5Fragment">
 
     <View
         android:id="@+id/view_1"

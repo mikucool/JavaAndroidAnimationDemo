@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.animationplayground.databinding.ActivityMainBinding;
-import com.example.animationplayground.fragment.ViewsAnimationFragment;
+import com.example.animationplayground.views_animation.ViewsAnimationFragment;
 
 public class MainActivity extends AppCompatActivity {
 

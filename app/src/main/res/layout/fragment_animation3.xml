@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fragment.Animation3Fragment">
+    tools:context=".views_animation.fragment.Animation3Fragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
