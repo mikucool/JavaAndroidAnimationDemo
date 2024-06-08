@@ -1,4 +1,4 @@
-package com.example.animationplayground.properties_ainmation;
+package com.example.animationplayground.properties_animation;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

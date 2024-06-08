@@ -12,7 +12,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.animationplayground.databinding.FragmentCategoryBinding;
-import com.example.animationplayground.properties_ainmation.PropertiesAnimationFragment;
+import com.example.animationplayground.properties_animation.PropertiesAnimationFragment;
 import com.example.animationplayground.views_animation.ViewsAnimationFragment;
 
 public class CategoryFragment extends Fragment implements View.OnClickListener {

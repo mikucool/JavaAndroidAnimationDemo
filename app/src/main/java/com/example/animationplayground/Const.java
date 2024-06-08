@@ -18,7 +18,8 @@ public class Const {
         viewsAnimationMap.put("5 Example_1", DEFAULT_PACKAGE + "views_animation.fragment.Animation5Fragment");
         MAP_LIST.add(viewsAnimationMap);
 
-
-
+        Map<String, String> propertiesAnimationMap = new HashMap<>();
+        propertiesAnimationMap.put("1 PropertiesAnimationsDemo", DEFAULT_PACKAGE + "properties_animation.fragment.PropertiesAnimationDemoFragment");
+        MAP_LIST.add(propertiesAnimationMap);
     }
 }
