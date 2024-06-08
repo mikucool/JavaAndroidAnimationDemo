@@ -16,6 +16,8 @@ import com.example.animationplayground.R;
 import com.example.animationplayground.adapter.DemoAdapter;
 import com.example.animationplayground.databinding.FragmentViewsAnimationBinding;
 
+import java.util.Map;
+
 public class ViewsAnimationFragment extends Fragment {
     private FragmentViewsAnimationBinding binding;
 
@@ -34,19 +36,22 @@ public class ViewsAnimationFragment extends Fragment {
         // Inflate the layout for this fragment
         binding = FragmentViewsAnimationBinding.inflate(inflater, container, false);
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
-        binding.recyclerView.setAdapter(new DemoAdapter(fragmentName -> {
-            try {
-                Class<?> cls = Class.forName(fragmentName);
-                Fragment fragment = (Fragment) cls.newInstance();
-                requireActivity().getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.main_layout, fragment)
-                        .addToBackStack(fragmentName)
-                        .commit();
-            } catch (Exception e) {
-                Toast.makeText(requireContext(), "Fragment Is Not Found", Toast.LENGTH_SHORT).show();
-            }
-        }, MAP_LIST.get(0)));
+        Map<String, String> map = MAP_LIST.get(0);
+        if (map != null) {
+            binding.recyclerView.setAdapter(new DemoAdapter(fragmentName -> {
+                try {
+                    Class<?> cls = Class.forName(fragmentName);
+                    Fragment fragment = (Fragment) cls.newInstance();
+                    requireActivity().getSupportFragmentManager()
+                            .beginTransaction()
+                            .replace(R.id.main_layout, fragment)
+                            .addToBackStack(fragmentName)
+                            .commit();
+                } catch (Exception e) {
+                    Toast.makeText(requireContext(), "Fragment Is Not Found", Toast.LENGTH_SHORT).show();
+                }
+            }, map));
+        }
         return binding.getRoot();
     }
 }
