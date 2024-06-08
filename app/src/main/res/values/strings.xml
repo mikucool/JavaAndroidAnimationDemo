@@ -19,4 +19,7 @@
     <string name="bounce_interpolator">BounceInterpolator</string>
     <string name="cycle_interpolator">CycleInterpolator</string>
     <string name="interpolator">interpolator</string>
+
+    <string name="views_animation">Views Animations</string>
+    <string name="properties_animation">Properties Animations</string>
 </resources>

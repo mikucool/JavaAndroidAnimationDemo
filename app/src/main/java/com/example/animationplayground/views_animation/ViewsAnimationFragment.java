@@ -16,9 +16,6 @@ import com.example.animationplayground.R;
 import com.example.animationplayground.adapter.DemoAdapter;
 import com.example.animationplayground.databinding.FragmentViewsAnimationBinding;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 public class ViewsAnimationFragment extends Fragment {
     private FragmentViewsAnimationBinding binding;
 
