@@ -22,4 +22,7 @@
 
     <string name="views_animation">Views Animations</string>
     <string name="properties_animation">Properties Animations</string>
+    <string name="x_position">X Position</string>
+    <string name="z_rotation">Z Rotation</string>
+    <string name="background">Background</string>
 </resources>
