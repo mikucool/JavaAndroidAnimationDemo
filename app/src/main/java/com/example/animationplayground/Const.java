@@ -19,7 +19,8 @@ public class Const {
         MAP_LIST.add(viewsAnimationMap);
 
         Map<String, String> propertiesAnimationMap = new HashMap<>();
-        propertiesAnimationMap.put("1 PropertiesAnimationsDemo", DEFAULT_PACKAGE + "properties_animation.fragment.PropertiesAnimationDemoFragment");
+        propertiesAnimationMap.put("1 PropertiesAnimationsXML", DEFAULT_PACKAGE + "properties_animation.fragment.PropertiesAnimationDemoFragment");
+        propertiesAnimationMap.put("2 PropertiesAnimationsProgramming", DEFAULT_PACKAGE + "properties_animation.fragment.PropertiesAnimationDemo2Fragment");
         MAP_LIST.add(propertiesAnimationMap);
     }
 }

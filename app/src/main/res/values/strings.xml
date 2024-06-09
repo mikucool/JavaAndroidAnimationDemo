@@ -25,4 +25,5 @@
     <string name="x_position">X Position</string>
     <string name="z_rotation">Z Rotation</string>
     <string name="background">Background</string>
+    <string name="animation_key_frame">Key Frame</string>
 </resources>
