@@ -26,4 +26,14 @@
     <string name="z_rotation">Z Rotation</string>
     <string name="background">Background</string>
     <string name="animation_key_frame">Key Frame</string>
+    <string name="Canvas">Canvas</string>
+    <string name="canvas_image_view">Canvas Image View</string>
+    <string name="arc">Arc</string>
+    <string name="circle">Circle</string>
+    <string name="oval">Oval</string>
+    <string name="point">Point</string>
+    <string name="Path">Path</string>
+    <string name="line">Line</string>
+    <string name="rounded_rect">R Rect</string>
+    <string name="rectangle">Rect</string>
 </resources>

@@ -24,6 +24,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/properties_animation" />
+
+        <Button
+            android:id="@+id/canvas_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Canvas" />
     </LinearLayout>
 
 </FrameLayout>

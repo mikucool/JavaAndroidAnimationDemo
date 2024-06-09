@@ -22,5 +22,10 @@ public class Const {
         propertiesAnimationMap.put("1 PropertiesAnimationsXML", DEFAULT_PACKAGE + "properties_animation.fragment.PropertiesAnimationDemoFragment");
         propertiesAnimationMap.put("2 PropertiesAnimationsProgramming", DEFAULT_PACKAGE + "properties_animation.fragment.PropertiesAnimationDemo2Fragment");
         MAP_LIST.add(propertiesAnimationMap);
+
+        Map<String, String> canvasMap = new HashMap<>();
+        canvasMap.put("1 BasicShape", DEFAULT_PACKAGE + "canvas.fragment.BasicShapeFragment");
+        MAP_LIST.add(canvasMap);
+
     }
 }
