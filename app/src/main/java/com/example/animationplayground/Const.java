@@ -25,6 +25,7 @@ public class Const {
 
         Map<String, String> canvasMap = new HashMap<>();
         canvasMap.put("1 BasicShape", DEFAULT_PACKAGE + "canvas.fragment.BasicShapeFragment");
+        canvasMap.put("2 CustomSelector", DEFAULT_PACKAGE + "canvas.fragment.CustomSelectorFragment");
         MAP_LIST.add(canvasMap);
 
     }
