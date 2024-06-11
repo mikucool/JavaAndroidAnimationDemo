@@ -28,5 +28,9 @@ public class Const {
         canvasMap.put("2 CustomSelector", DEFAULT_PACKAGE + "canvas.fragment.CustomSelectorFragment");
         MAP_LIST.add(canvasMap);
 
+        Map<String, String> frameAniamtionMap = new HashMap<>();
+        frameAniamtionMap.put("1 Demo", DEFAULT_PACKAGE + "frame_animation.fragment.FrameAnimationDemoFragment");
+        MAP_LIST.add(frameAniamtionMap);
+
     }
 }
