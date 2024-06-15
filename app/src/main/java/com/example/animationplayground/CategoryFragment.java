@@ -19,7 +19,6 @@ import com.example.animationplayground.properties_animation.PropertiesAnimationF
 import com.example.animationplayground.views_animation.ViewsAnimationFragment;
 
 public class CategoryFragment extends Fragment implements View.OnClickListener {
-    private FragmentCategoryBinding binding;
     private int containerId;
 
     public CategoryFragment() {
@@ -37,7 +36,7 @@ public class CategoryFragment extends Fragment implements View.OnClickListener {
         if (container != null) {
             containerId = container.getId();
         }
-        binding = FragmentCategoryBinding.inflate(inflater, container, false);
+        com.example.animationplayground.databinding.FragmentCategoryBinding binding = FragmentCategoryBinding.inflate(inflater, container, false);
         binding.viewsAnimationButton.setOnClickListener(this);
         binding.propertiesAnimationButton.setOnClickListener(this);
         binding.canvasButton.setOnClickListener(this);

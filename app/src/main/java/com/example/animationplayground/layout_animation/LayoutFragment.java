@@ -20,7 +20,6 @@ import com.example.animationplayground.databinding.FragmentLayoutBinding;
 import java.util.Map;
 
 public class LayoutFragment extends Fragment {
-    private FragmentLayoutBinding binding;
     public LayoutFragment() {
     }
 
@@ -32,7 +31,7 @@ public class LayoutFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding = FragmentLayoutBinding.inflate(inflater, container, false);
+        com.example.animationplayground.databinding.FragmentLayoutBinding binding = FragmentLayoutBinding.inflate(inflater, container, false);
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
         Map<String, String> map = MAP_LIST.get(4);
         if (map != null) {
