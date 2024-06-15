@@ -34,6 +34,7 @@ public class Const {
 
         Map<String, String> layoutAniamtionMap = new HashMap<>();
         layoutAniamtionMap.put("1 Layout Animation", DEFAULT_PACKAGE + "layout_animation.fragment.LayoutAnimationDemoFragment");
+        layoutAniamtionMap.put("2 Layout Transition", DEFAULT_PACKAGE + "layout_animation.fragment.LayoutTransitionDemoFragment");
         MAP_LIST.add(layoutAniamtionMap);
 
     }

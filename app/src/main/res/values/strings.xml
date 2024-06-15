@@ -6,7 +6,6 @@
     <string name="scale">scale</string>
     <string name="translate">translate</string>
     <string name="rotate">rotate</string>
-    <string name="set1">set1</string>
     <string name="animation_set">set</string>
     <string name="animation_listener">listener</string>
     <string name="accelerate_interpolator">AccelerateInterpolator</string>
@@ -42,4 +41,6 @@
     <string name="animation_fade_in">Fade in</string>
     <string name="animation_fade_in_left">Fade in left</string>
     <string name="animation_rotate">rotate</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
 </resources>
