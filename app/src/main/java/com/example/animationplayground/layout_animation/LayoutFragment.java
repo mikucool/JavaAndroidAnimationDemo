@@ -15,13 +15,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.animationplayground.R;
 import com.example.animationplayground.adapter.DemoAdapter;
-import com.example.animationplayground.databinding.FragmentLayoutAnimationBinding;
+import com.example.animationplayground.databinding.FragmentLayoutBinding;
 
 import java.util.Map;
 
-public class LayoutAnimationFragment extends Fragment {
-    private FragmentLayoutAnimationBinding binding;
-    public LayoutAnimationFragment() {
+public class LayoutFragment extends Fragment {
+    private FragmentLayoutBinding binding;
+    public LayoutFragment() {
     }
 
     @Override
@@ -32,7 +32,7 @@ public class LayoutAnimationFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding = FragmentLayoutAnimationBinding.inflate(inflater, container, false);
+        binding = FragmentLayoutBinding.inflate(inflater, container, false);
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
         Map<String, String> map = MAP_LIST.get(4);
         if (map != null) {
