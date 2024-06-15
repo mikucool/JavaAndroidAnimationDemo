@@ -38,4 +38,8 @@
     <string name="rectangle">Rect</string>
     <string name="start">start</string>
     <string name="frame_animation">Frame Animation</string>
+    <string name="layout_animation">Layout Animation</string>
+    <string name="animation_fade_in">Fade in</string>
+    <string name="animation_fade_in_left">Fade in left</string>
+    <string name="animation_rotate">rotate</string>
 </resources>

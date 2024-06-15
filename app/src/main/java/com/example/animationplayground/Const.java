@@ -32,5 +32,9 @@ public class Const {
         frameAniamtionMap.put("1 Demo", DEFAULT_PACKAGE + "frame_animation.fragment.FrameAnimationDemoFragment");
         MAP_LIST.add(frameAniamtionMap);
 
+        Map<String, String> layoutAniamtionMap = new HashMap<>();
+        layoutAniamtionMap.put("1 Recycler Animation", DEFAULT_PACKAGE + "layout_animation.fragment.LayoutAnimationDemoFragment");
+        MAP_LIST.add(layoutAniamtionMap);
+
     }
 }
