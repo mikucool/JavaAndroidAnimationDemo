@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.animationplayground.transition_animation.ActivityTransactionFragment;
 import com.example.animationplayground.canvas.CanvasFragment;
 import com.example.animationplayground.databinding.FragmentCategoryBinding;
 import com.example.animationplayground.frame_animation.FrameAnimationFragment;
@@ -42,6 +43,7 @@ public class CategoryFragment extends Fragment implements View.OnClickListener {
         binding.canvasButton.setOnClickListener(this);
         binding.frameAnimationButton.setOnClickListener(this);
         binding.layoutAnimationButton.setOnClickListener(this);
+        binding.activityTransitionButton.setOnClickListener(this);
         return binding.getRoot();
     }
 
@@ -74,6 +76,10 @@ public class CategoryFragment extends Fragment implements View.OnClickListener {
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction transaction = fragmentManager.beginTransaction();
             transaction.replace(containerId, new LayoutFragment()).addToBackStack("").commit();
+        } else if (v == v.findViewById(R.id.activity_transition_button)) {
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(containerId, new ActivityTransactionFragment()).addToBackStack("").commit();
         }
     }
 }

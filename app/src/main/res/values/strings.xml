@@ -43,4 +43,7 @@
     <string name="animation_rotate">rotate</string>
     <string name="add">Add</string>
     <string name="remove">Remove</string>
+    <string name="activity_transition">Activity Transition</string>
+    <string name="activity">Activity</string>
+    <string name="fragment">Fragment</string>
 </resources>
